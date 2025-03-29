@@ -1,0 +1,25 @@
+{
+  "name": "cli-tool",
+  "version": "1.0.0",
+  "description": "A command-line interface tool",
+  "main": "src/index.js",
+  "bin": {
+    "cli-tool": "./src/index.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "cli",
+    "command-line"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
+}
