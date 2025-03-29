@@ -26,6 +26,9 @@ jobs:
 
   cli-project:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cli
     steps:
       - uses: actions/checkout@v4
 
@@ -36,11 +39,7 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: |
-          cd cli
-          npm ci
+        run: npm ci
 
       - name: Run tests
-        run: |
-          cd cli
-          npm test
+        run: npm test
