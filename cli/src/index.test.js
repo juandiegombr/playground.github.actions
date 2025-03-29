@@ -10,4 +10,4 @@ describe('CLI Tool', () => {
     const output = execSync('node src/index.js hello John').toString().trim();
     expect(output).toBe('Hello, John!');
   });
-}); 
+});

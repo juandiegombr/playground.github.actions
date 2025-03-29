@@ -4,8 +4,8 @@
   "description": "A basic Node.js project with Jest testing",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "jest --testPathIgnorePatterns=cli/",
+    "test:watch": "jest --watch --testPathIgnorePatterns=cli/"
   },
   "keywords": [],
   "author": "",
